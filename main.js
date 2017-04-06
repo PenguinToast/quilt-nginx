@@ -1,9 +1,14 @@
-var app = require("./app");
+const {
+		createDeployment,
+		Machine,
+		githubKeys,
+} = require('@quilt/core');
+const app = require('./app');
 
-var deployment = createDeployment({});
+const deployment = createDeployment({});
 
 // Setup the infrastructure.
-var baseMachine = new Machine({
+const baseMachine = new Machine({
     provider: "Amazon",
     // Replace with your GitHub username to allow logging into machines.
     // sshKeys: githubKeys("CHANGE_ME"),

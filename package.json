@@ -1,3 +1,11 @@
 {
-    "main": "./app.js"
+  "name": "@quilt/nginx",
+  "version": "0.0.0",
+  "main": "./app.js",
+  "description": "PLACEHOLDER",
+  "repository": "quilt/nginx",
+  "license": "MIT",
+  "dependencies": {
+    "@quilt/core": "*"
+  }
 }
